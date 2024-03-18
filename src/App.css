@@ -1,0 +1,37 @@
+.products{
+  margin: 20px;
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.product {
+  width: 500px;
+  height: 500px;
+  padding: 50px;
+  margin: 30px;
+  border: 1px solid black;
+  overflow: hidden;
+  position: relative; /* Required for absolute positioning of child elements */
+}
+
+.image {
+  width: 100%; /* Take up 100% width of the .product */
+  height: 100%; /* Take up 100% height of the .product */
+  object-fit: cover; /* Maintain aspect ratio while covering the entire area */
+  position: absolute; /* Position the image within the .product */
+  top: 0; /* Align image to the top */
+  left: 0; /* Align image to the left */
+}
+
+.bottom-container{
+  display: flex;
+  justify-content: center;
+  size: 30px;
+}
+
+.pagination__selected{
+  padding: 20px;
+  background-color: aliceblue;
+  border: 1px solid black;
+}
